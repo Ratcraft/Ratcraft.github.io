@@ -17,7 +17,6 @@ input, button, textarea, select { font: inherit }
 /* Mobiles */
 @media (max-width: 767px) { body { padding: 12% 8% } }
 
-
 /* Web page */
 body { 
     background-color: #d1274b;
