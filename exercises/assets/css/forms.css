@@ -149,7 +149,7 @@ section p {
  }
 
  /* Solid buttons */
-.btn-solid:link, .btn-solid:visited {
+.btn-solid, .btn-solid:link, .btn-solid:visited {
     background-color: blue; 
     color: #fff;
  } 
@@ -160,7 +160,7 @@ section p {
  } 
  
  /* Gradient buttons */
-.btn-gradient:link, .btn-gradient:visited {
+.btn-gradient, .btn-gradient:link, .btn-gradient:visited {
     background-image: linear-gradient(90deg,#e052a0,#f15c41);
     color: #fff;
  } 
@@ -171,7 +171,7 @@ section p {
  } 
  
  /* Ghost buttons */
-.btn-ghost:link, .btn-ghost:visited {
+.btn-ghost, .btn-ghost:link, .btn-ghost:visited {
     border: solid 2px #000;
     color: #000;
     background-color: transparent; 
@@ -211,6 +211,33 @@ section p {
     .container-btn a:first-child { margin-bottom: 32px }
     .container-btn a:last-child { margin-bottom: 0 }
     /* .container-btn .btn { align-self: center } */
+}
+
+/* =============== FORMS ============== */
+.container-form { 
+    margin-top: 32px; margin-bottom: 32px;
+    align-items: stretch;
+    padding: 20px; background-color: lightgray;
+}
+    
+@media (min-width: 767px) {
+    .container-form input { margin-right: 32px; min-width: 320px }  
+    /* .container-form { justify-content: space-around } */
+}
+    
+@media (max-width: 767px) {
+    .container-form { flex-direction: column }
+    .container-form input { margin-bottom: 24px; width: 100%; }
+    /* .container-form input, .container-form button { 
+    display: block; text-align: center; margin-left: auto; margin-right: auto  } */    
+}
+    
+.container-form .btn { padding: 6px 20px }
+.container-form input { 
+    padding: 6px 6px;
+    border: solid 1px gray;
+    font-size: 18px;
+    font-family: sans-serif;
 }
 
 /*=============== UTILTY CLASSES ==============*/
