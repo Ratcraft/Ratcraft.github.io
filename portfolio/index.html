@@ -1,138 +1,187 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Analytics Software | IBAT Web Design Portfolio Project | Mary Smith</title>
-
-	<meta name="description" content="IBAT Analytics tells you all you need to know about your website traffic, without tracking or storing visitors' personal information.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
-	<link href="assets/css/style.css" rel="stylesheet">
+	<title>Portfolio | Alexis Duchet Web Designer</title>
+	<meta name="description" content="I use HTML and CSS with graphic design and animation to bring your ideas to life.">
+	
+    <link href="../assets/css/resets.css" rel="stylesheet">
+    <link href="../assets/css/menus.css" rel="stylesheet">  
+    <link href="../assets/css/header.css" rel="stylesheet">
+	<link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/footer.css" rel="stylesheet">
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,900,900i&display=swap" rel="stylesheet">
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome 5 icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+
+    <style>
+        header.hero-block, .menu-light, .flyout-menu.menu-light { background-color: #fff6de }
+        .wavy-underline { text-decoration: wavy underline brown }
+    </style>
 </head>
 
 
 <body>
 
+    <!-- Begin desktop menu -->
+    <div class="container-menu-desktop menu-light menu-sticky">
+        <!-- first child item -->
+        <a href="../index.html"><img src="../assets/img/website-logo.png" alt="website logo"></a>
+        <!-- second child item -->
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+        </ul>
+    </div>
+    <!-- End desktop menu -->
+
+
+    <!-- Begin mobile menu bar -->
+    <div class="container-menu-bar-mobile menu-light menu-sticky">
+            <!-- first child -->
+            <a href="#"><img src="../assets/img/website-logo.png" alt="website logo"></a>
+            <!-- second child -->
+            <div class="item-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    <!-- End mobile menu bar -->
+
+    <!-- Begin mobile menu slide-out options -->
+    <div class="flyout-menu flyout-menu-is-closed menu-light">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../contact/index.html" class="btn-cta"><i class="fas fa-shopping-cart"></i> Contact</a></li>
+        </ul>
+
+        <hr>
+        <h4>About Me</h4>
+        <div class="fly-out-profile-box">
+            <img src="../assets/img/profile-pic.jpg" alt="Mary Smith, web designer, Dublin">
+            <p>Hi, I'm <b>Alexis Duchet</b>, a web and digital designer based in Paris, France.</p>
+        </div>
+   
+        <h4>Contact</h4>
+        <p>Have a project you'd like to discuss? Let's make something great together!</p>
+
+        <h5><a href="alexisduchet@hotmail.com" target="_blank">alexisduchet@hotmail.com</a></h5>
+
+        <h4>Social Links</h4>
+        <div class="fly-out-social-icons">
+            <a href="https://github.com/Ratcraft" target="_blank"><i class="fab fa-github-square fa-fw"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a>
+            <a href="https://twitter.com/duchAlexiss" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div>
+    <!-- End mobile menu slide-out options -->
+
+     <!-- Begin hero block -->
+     <header class="hero-block unhide-content-under-sticky-menu">
+        <div class="hero-text-container">
+            <h1>Things I have created</h1>
+            <h2>I use JavaScript, HTML and CSS with graphic design and animation <span class="wavy-underline">to bring your ideas to life</span>.</h2>
+            <div class="container-btn"><a href="../contact/index.html" class="btn btn-solid"><i class="fas fa-arrow-right"></i> Let's talk</a>       
+            </div>
+        </div>
+    </header>
+    <!-- End hero block -->
+
+        <div class="container-flexbox bg-pastel-coral">
+            <div class="item-1">
+                <h2>Web Development Projects</h2>
+                <p>Below you can see some examples of my work from my web development and design porfolio.</p>
+            </div>
+        </div><!-- End parent flexbox container -->
+
+        <div class="container-flexbox bg-soft-black">
+
+		<div class="item-3">
+			<a href="van-gogh/index.html"><img src="../assets/img/project-van-gogh.png" c alt="Project: Vincent Van Gogh"></a>
+			<h3>Vincent Van Gogh</h3>
+            <p>Responsive page layout with fluid typography, Google Fonts, and embedded YouTube video.</p>
+            <a href="van-gogh/index.html" class="button button-solid">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>             
+		</div>
+
+        <div class="item-3">
+			<a href="smoothies/index.html"><img src="../assets/img/project-smoothie.jpg"  alt="Project: Smooth Smoothies"></a>
+			<h3>Smooth Smoothies</h3>
+            <p>Transparent images, serverless email sign-up form and JavaScript on-scroll menu effects.</p>
+            <a href="smoothies/index.html" class="button button-solid">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>           
+        </div>
+        
+		<div class="item-3">
+			<a href="ireland/index.html"><img src="../assets/img/project-ireland.jpg"  alt="Project: Ireland Tourism"></a>
+			<h3>Ireland's Attractions</h3>
+            <p>On-page navigation with a looped background video that includes a tinted overlay.</p>
+            <a href="ireland/index.html" class="button button-solid">View Project &nbsp;<i class="fas fa-arrow-right"></i></a>               
+		</div>
+
+	</div><!-- End parent flexbox container -->
+
+   
+	<footer>
+
+        <h4>Alexis Duchet</h4>
+        <h5>Good in front-end development</h5>
+    
+        <ul class="footer-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../../contact/index.html">Contact</a></li>
+        </ul>
+        
+        <ul class="footer-icons">
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+    
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+    
+            <li>
+                <a href="https://github.com/Ratcraft" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+    
+            <li>
+                <a href="https://twitter.com/duchAlexiss" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+    
+            <li>
+                <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            
+         </ul>                
+        
+    </footer>
 	
-	<!-- Parent flexbox container for one column layout (.item-col-1) on all screens -->
-	<section class="container-flexbox bg-green">
-		<div class="item-col-1">
-			<p class="big-text">IBAT Analytics has been featured on <a href="https://www.fastcompany.com/" target="_blank">Fast Company</a>, <a href="https://www.producthunt.com/" target="_blank">Product Hunt</a> and <a href="https://news.ycombinator.com/" target="_blank">HackerNews</a> for being a simple and easy-to-use alternative to Google Analytics.</p>
-		</div>
-	</section><!-- End parent flexbox container -->
+    <script src="../assets/js/menus.js"></script>
 
-
-	<!-- Parent flexbox container for one column layout (.item-col-1) on all screens -->
-	<section class="container-flexbox bg-light-gray no-padding-bottom">
-		<div class="item-col-1">
-			<h2>What we offer</h2>
-			<p>Say 'Hello' to a simple yet powerful user analytics system. IBAT Analytics tells you all you need to know about your website traffic, without tracking or storing your visitors' personal information. </p>
-		</div>
-	</section><!-- End parent flexbox container -->
-
-
-	<!-- Parent flexbox container for three-column layout (.item-col-3) on 
-	desktops and one-column layout on mobiles -->
-	<section class="container-flexbox bg-light-gray">
-
-		<div class="item-col-3">
-			<img src="assets/img/charts.png" alt="One screen">
-			<h3>One screen</h3>
-			<p>All your analytics essentials at-a-glance on one single, clutter-free screen: top pages, page views, referrers, browser screen sizes and more.</p>
-		</div>
-
-		<div class="item-col-3">
-			<img src="assets/img/mobile.png" alt="Cookie-less">
-			<h3>Cookie-less</h3>
-			<p>You won't need to distract your website visitors with pesky messages about cookie tracking. And IBAT Analytics is fully GDPR compliant too.</p>
-		</div>
-
-		<div class="item-col-3">
-			<img src="assets/img/forms.png" alt="Know your KPIs">
-			<h3>Quick set-up</h3>
-			<p>Just add two lines of JavaScript to your web pages - and you're done! React, Angular, Vue, Svelte and other modern front-end frameworks fully supported.</p>
-		</div>
-	</section><!-- End parent flexbox container -->
-	
-	<!-- Parent flexbox container for one column layout (.item-col-1) on all screens -->
-	<section class="container-flexbox bg-light-gray no-padding-bottom">
-		<div class="item-col-1">
-			<h2>How you benefit</h2>
-			<p>IBAT Analytics helps you focus on what's important: your business.</p>
-		</div>
-	</section><!-- End parent flexbox container -->
-
-		
-	<!-- Begin parent flexbox container for three-column layout (.item-col-3) 
-	on desktops and one-column layout on mobiles -->
-	<section class="container-flexbox bg-light-gray">
-
-		<div class="item-col-3">
-			<img src="assets/img/trends.png" alt="content performancee">
-			<h3>Measure content performance</h3>
-			<p>Discover what's popular on your website, and what needs to improve. All from one, easy-to-navigate, blazingly-fast dashboard screen.</p>
-		</div>
-
-		<div class="item-col-3">
-			<img src="assets/img/project.png" alt="Grow your businesse">
-			<h3>Grow your business</h3>
-			<p>Get actionable insights with real-time and historical data to guide evidence-based decision-making and content optimisation across your entire website.</p>
-		</div>
-
-		<div class="item-col-3">
-			<img src="assets/img/data.png" alt="Reader engagement">
-			<h3>Be future-ready</h3>
-			<p>Our auto-scaling web servers handle billions of page views. So you don't need to worry about sudden traffic spikes impacting your website's performance.</p>
-		</div>
-
-	</section><!-- End parent flexbox container -->
-
-
-	<!-- Parent flexbox container for one column layout (.item-col-1) on all screens -->
-	<section class="container-flexbox bg-green">
-		<div class="item-col-1">
-			<img src="assets/img/dashboard.png" alt="Analytics dashboard">
-		</div>
-	</section><!-- End parent flexbox container -->
-
-
-	<!-- Begin parent flexbox container for one column layout (.item-col-1) on all screens -->
-	<section class="container-flexbox bg-light-gray no-padding-bottom">
-		<div class="item-col-1">
-			<h2>Happy users</h2>
-			<p>Join the 1,000s of delighted customers from every sector of business around the world who are using IBAT Analytics to drive their future success.</p>
-		</div>
-	</section><!-- End parent flexbox container -->
-
-
-	<!-- Parent flexbox container for three-column layout (.item-col-3) on 
-	desktop and one-column layout on mobiles -->
-	<section class="container-flexbox happy-users bg-light-gray">
-
-		<div class="item-col-3">
-			<img src="assets/img/face-2.png"  alt="Joe Bloggs">
-			<p><i>"Excellent service"</i></p>
-			<p><b>Joe Bloggs</b></p>
-		</div>
-
-		<div class="item-col-3">
-			<img src="assets/img/face-1.png"  alt="Mary Murphy">
-			<p><i>"Best SAAS platform"</i></p>
-			<p><b>Mary Smith</b></p>
-		</div>
-
-		<div class="item-col-3">
-			<img src="assets/img/face-3.png" alt="Simon Smith">
-			<p><i>"Simple and affordable"</i></p>
-			<p><b>Simon Murphy</b></p>
-		</div>
-
-	</section><!-- End parent flexbox container -->
 </body>
 </html>
